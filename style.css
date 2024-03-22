@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(217, 19%, 26%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+     background-color: var(--Very-Dark-Blue);
+     margin: 1.5rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vb;
+}
+
+button{
+    font-family: inherit;
+}
+p{
+    line-height: 1.8;
+}
+.main-container,
+.thank-you{
+    background-color: var(--Dark-Blue);
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    max-width: 400px;
+}
+.main-container img{
+    background-color: var(--Medium-Grey);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.main-container h1{
+    color:var(--White);
+    margin: 2rem 0 1rem;
+}
+.main-container p{
+    color: var(--Light-Grey);
+    margin-bottom: 1rem;
+}
+.main-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.main-container ul li button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--Medium-Grey);
+    color:var(--White);
+    padding-top: 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main-container ul li button:hover{
+    background-color: var(--Orange);
+}
+.main-container ul li button:focus{
+    background-color: var(--Light-Grey);
+}
+.submit-button{
+    background-color: var(--Orange);
+    width: 100%;
+    border: none;
+    color: var(--White);
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 0.8rem 0 0.6rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.thank-you img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+.thank-you p.change-color{
+    background-color: var(--Medium-Grey);
+    color: var(--Orange);
+    border-radius: 30px;
+    padding: 0 0.6rem 0 0.6rem;
+   font-size: 0.8rem;
+   margin-bottom: 2rem;
+}
+.thank-you h2{
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+.thank-you p{
+    color: var(--Light-Grey);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.attribution {
+     font-size: 11px;
+      text-align: center; 
+      color: var(--White);
+      margin-top: 2rem;
+      letter-spacing: 0.03rem;
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     
+     }
+
